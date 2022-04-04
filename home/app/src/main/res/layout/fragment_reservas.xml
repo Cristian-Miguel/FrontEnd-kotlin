@@ -1,14 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ReservasFragment">
 
-    <TextView
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Reservas fragment"
-        android:gravity="center"/>
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/BarraSuperior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#fff01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/MenuHam"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="18dp"
+                app:srcCompat="@drawable/ic_baseline_menu_24" />
+            <TextView
+                android:id="@+id/TextoSuperior"
+                android:text="¿Qué quieres vivir?"
+                android:layout_marginStart="16dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/TituloReservas"
+            android:layout_width="157dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="300dp"
+            android:text="@string/reservas"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BarraSuperior" />
+
+        <ImageView
+            android:id="@+id/Patzcuaro"
+            android:layout_width="137dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TituloReservas"
+            app:srcCompat="@mipmap/PatzcuaroRecorte" />
+
+        <TextView
+            android:id="@+id/Titulo1"
+            android:layout_width="164dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:text="Tour Patzcuaro"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Patzcuaro"
+            app:layout_constraintTop_toTopOf="@+id/Patzcuaro" />
+
+        <TextView
+            android:id="@+id/Descripcion1"
+            android:layout_width="197dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Disfrute de la magia de Patzcuaro, verdaderamente el secreto mejor guardado de todas las ciudades coloniales de México."
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/Patzcuaro"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo1" />
+
+        <ImageView
+            android:id="@+id/LaMarina"
+            android:layout_width="138dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Patzcuaro"
+            app:srcCompat="@mipmap/LaMarinaRecorte" />
+
+        <TextView
+            android:id="@+id/Titulo3"
+            android:layout_width="166dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:text="Restaurante La Marina"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/LaMarina"
+            app:layout_constraintTop_toTopOf="@+id/LaMarina" />
+
+        <TextView
+            android:id="@+id/Descripcion3"
+            android:layout_width="196dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Si buscas un lugar fresco y diferente con espectaculares vistas al lago y su entorno, debes visitarnos."
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/LaMarina"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
