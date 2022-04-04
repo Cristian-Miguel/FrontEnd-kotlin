@@ -6,6 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/BarraSuperior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#fff01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/MenuHam"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="18dp"
+                app:srcCompat="@drawable/ic_baseline_menu_24" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/TextoSuperior"-->
+            <!--                android:text="¿Qué quieres vivir?"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginRight="18dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"/>-->
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+                android:text="¿Qué quieres vivir?"
+                android:textSize="12dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="300dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Menu"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarraSuperior" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="69dp"
@@ -152,10 +196,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="377dp"
-        android:layout_height="450dp"
+        android:layout_width="374dp"
+        android:layout_height="459dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/Tour3"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="196dp" />
+        tools:layout_editor_absoluteY="195dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
