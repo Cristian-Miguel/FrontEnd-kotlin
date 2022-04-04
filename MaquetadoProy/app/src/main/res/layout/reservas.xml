@@ -22,15 +22,22 @@
                 android:layout_height="18dp"
                 android:layout_marginRight="18dp"
                 app:srcCompat="@drawable/ic_baseline_menu_24" />
-            <TextView
-                android:id="@+id/TextoSuperior"
+<!--            <TextView-->
+<!--                android:id="@+id/TextoSuperior"-->
+<!--                android:text="¿Qué quieres vivir?"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginRight="18dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
                 android:text="¿Qué quieres vivir?"
-                android:layout_marginStart="16dp"
-                android:layout_marginRight="18dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-
+                android:textSize="12dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="300dp" />
         </androidx.appcompat.widget.Toolbar>
 
         <TextView
@@ -69,16 +76,38 @@
             app:layout_constraintStart_toEndOf="@+id/Patzcuaro"
             app:layout_constraintTop_toTopOf="@+id/Patzcuaro" />
 
+        <ImageView
+            android:id="@+id/estrella1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/Patzcuaro"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo1"
+            app:srcCompat="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:id="@+id/Calificacion1"
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="4.3(300)"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/estrella1"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo1" />
+
         <TextView
             android:id="@+id/Descripcion1"
-            android:layout_width="197dp"
-            android:layout_height="64dp"
+            android:layout_width="213dp"
+            android:layout_height="57dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:text="Disfrute de la magia de Patzcuaro, verdaderamente el secreto mejor guardado de todas las ciudades coloniales de México."
             android:textSize="12dp"
             app:layout_constraintStart_toEndOf="@+id/Patzcuaro"
-            app:layout_constraintTop_toBottomOf="@+id/Titulo1" />
+            app:layout_constraintTop_toBottomOf="@+id/estrella1" />
 
         <ImageView
             android:id="@+id/LaMarina"
@@ -101,16 +130,38 @@
             app:layout_constraintStart_toEndOf="@+id/LaMarina"
             app:layout_constraintTop_toTopOf="@+id/LaMarina" />
 
+        <ImageView
+            android:id="@+id/estrella2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/LaMarina"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo3"
+            app:srcCompat="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:id="@+id/Calificacion2"
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="4.3(300)"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/estrella2"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo3" />
+
         <TextView
             android:id="@+id/Descripcion3"
-            android:layout_width="196dp"
-            android:layout_height="61dp"
+            android:layout_width="212dp"
+            android:layout_height="46dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:text="Si buscas un lugar fresco y diferente con espectaculares vistas al lago y su entorno, debes visitarnos."
             android:textSize="12dp"
             app:layout_constraintStart_toEndOf="@+id/LaMarina"
-            app:layout_constraintTop_toBottomOf="@+id/Titulo3" />
+            app:layout_constraintTop_toBottomOf="@+id/estrella2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
