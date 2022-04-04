@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ReservasFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -12,7 +14,7 @@
             android:id="@+id/BarraSuperior"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#fff01"
+            android:background="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -40,7 +42,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="300dp"
-            android:text="@string/reservas"
+            android:text="Tus Reservas"
             android:textSize="24dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +58,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TituloReservas"
-            app:srcCompat="@mipmap/PatzcuaroRecorte" />
+            app:srcCompat="@mipmap/patzcuarorecorte" />
 
         <TextView
             android:id="@+id/Titulo1"
@@ -88,7 +90,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Patzcuaro"
-            app:srcCompat="@mipmap/LaMarinaRecorte" />
+            app:srcCompat="@mipmap/lamarinarecorte" />
 
         <TextView
             android:id="@+id/Titulo3"
@@ -113,4 +115,3 @@
             app:layout_constraintTop_toBottomOf="@+id/Titulo3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
